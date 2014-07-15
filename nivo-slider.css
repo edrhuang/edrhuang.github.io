@@ -87,41 +87,44 @@
 .nivo-html-caption {
     display:none;
 }
+
 /* Direction nav styles (e.g. Next & Prev) */
 .nivo-directionNav a {
 	position:absolute;
 	top:45%;
 	z-index:9;
 	cursor:pointer;
-	width: 100px;
+	width: 50px;
 	height: 100px;
 	overflow: hidden;
 	text-indent: -100000px;
 	transition: 0.5s;
 }
+
 .nivo-prevNav {
 	left:10px;
-	background: url('images/slider-arrows.png') 0 -100px  no-repeat;
+	background: url('images/slider-arrows.png') 0 0  no-repeat;
+	opacity: 0.6;
 	
 	
 	
 }
+
 .nivo-nextNav {
     right: 10px;
-	background: url('images/slider-arrows.png')0 0 no-repeat;
+	background: url('images/slider-arrows.png')-50px 0 no-repeat;
+	opacity: 0.6;
 	
 }
 
 a:hover.nivo-prevNav  {
 	left:10px;
-	background: url('images/slider-arrows.png') -100px -100px  no-repeat;
-	
-	
-	
+	opacity: 1;
 }
+
 a:hover.nivo-nextNav{
     right: 10px;
-	background: url('images/slider-arrows.png')-100 0 no-repeat;
+	opacity: 1;
 	
 }
 /* Control nav styles (e.g. 1,2,3...) */
