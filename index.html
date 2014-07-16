@@ -12,13 +12,16 @@
 <body>
     
     <div class="intro">
+        
         <div class="info">
             <h1>Hello<br> My name is Edward and this site is <a href="#bio">about me</a></h1>
         </div>
         <div class="arrow">
                 <a href="#bio"><img src="images/arrow.png"></a>
-            </div>
+        </div>
+        
     </div>
+    
 <!---About Me Section--->    
     <div id="bio">
         <div class="sign">
@@ -28,7 +31,7 @@
         <div class="row">
             <div class="left">
                 <span class="subtitle">A quick overview</span>
-                <p>Born and raised in the Bay Area. I Spent a lot of time swimming, playing soccer, and drawing stuff. As I got older I got pretty good at swimming and it quickly consumed my entire life. My life was revolved around insane practice schedules and traveling to far away competitions. Swimming taught me to be patient and hard work will yield results. Eventually I swam fast enough, got accepted into Cal Poly and joined the swim team. At school I Majored in Graphic Communications with a concentration in Web and Digital Media. I sacrificed a large part of my life for swimming and towards the end of my junior year I realized I wanted to do more. I stopped swimming and began doing all the things I never had the energy or time to do. I found a real interest in the outdoors. I began bouldering and going on backpacking trips with friends. I found new hobbies and picked up old ones. Started to dabble more in photography and improve my web design skills.
+                <p>Born and raised in the Bay Area. I Spent a lot of time swimming, playing soccer, and drawing stuff. As I got older I got pretty good at swimming and it quickly consumed my entire life. My life was revolved around insane practice schedules and traveling to far away competitions. Swimming taught me being patient and working hard will yield results. Eventually I swam fast enough, got accepted into Cal Poly and joined the swim team. At school I Majored in Graphic Communications with a concentration in Web and Digital Media. I sacrificed a large part of my life for swimming and towards the end of my junior year I realized I wanted to do more. I stopped swimming and began doing all the things I never had the energy nor time to do. I became really interested in the outdoors. I began bouldering and going on backpacking trips with my friends. I found new hobbies and picked up old ones. Started to dabble more in photography and improve my web design skills.
             </div>
             
             <div class="right">
@@ -55,47 +58,41 @@
 
 <!---Slider--->
 <section id="image-gallery">
-<div class="pictures">
-    <h3>Image Gallery</h3>
-    <div id="slider" class="nivoSlider">
+    <div class="pictures">
+        <h3>Image Gallery</h3>
         
-        <img src="images/DSC_0003-44.jpg">
-        <img src="images/DSC_0037-2.jpg">
-        <img src="images/DSC_0070-10.jpg">
-        <img src="images/DSC_0073.jpg">
-        <img src="images/DSC_0211-37.jpg">
-        
-    </div>
+        <div id="slider" class="nivoSlider">
+            <img src="images/DSC_0003-44.jpg">
+            <img src="images/DSC_0037-2.jpg">
+            <img src="images/DSC_0070-10.jpg">
+            <img src="images/DSC_0073.jpg">
+            <img src="images/DSC_0211-37.jpg"> 
+        </div>
     
-</div>
+    </div>
 </section>
 
 <div class="my-info">
     <div class="contact">
         <h3>Contact</h3>
-       
         
         <div class="social">
             <ul>
                 <li>email<span class="short-line"></span><a href="mailto:edrhuang@gmail.com">edrhuang@gmail.com</a></li>
-                
                 <li>Phone<span class="short-line"></span>510-366-6020</li>
-                
                 <li>
                     <a href="https://www.linkedin.com/pub/edward-huang/34/30a/a89">LinkedIn</a>
                     <a href="http://www.edrhuang.com">Portfolio</a>
                     <a href="http://edweirdo.com">Blog</a>
                 </li>
-                
-
             </ul>
-        </div>
-    </div>
-</section>
+        </div><!---end of .social--->
+        
+    </div><!---end of .contact--->
 </body>
  
  
-
+<!---Page Scrolling Script--->
 <script>
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
@@ -120,9 +117,8 @@ $(window).load(function() {
         manualAdvance: true
     });
 });
-
-
 </script>
+
 <script>
 $('.nivo-prevNav').live('mouseover', function(){
      $('#slider img').attr("data-transition","sliInRight");
