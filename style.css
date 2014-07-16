@@ -51,7 +51,6 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 
 .info{
-    /*background-color: rgba(255,255,255,0.2);*/
     width: 1000px;
     height: 930px;
     padding: 25px;
@@ -164,11 +163,13 @@ h3 {
 .jtree{
     width: 650px;
 }
+
 .caption {
     color: red;
     font-family:'Roboto', sans-serif;
     font-size: 15px;
 }
+
 #image-gallery{
     background-color: rgba(192, 192, 192, 0.3);
     height: 1000px;
@@ -199,16 +200,6 @@ h3 {
 
 }
 
-.geo-p{
-    width: 1400px;
-    margin: 0 auto;
-    display: block;
-}
-
-.geo-p img{
-    margin: 0 auto;
-    display: block;
-}
 
 .social{
     width: 900px;
