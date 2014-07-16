@@ -13,6 +13,7 @@
 	width:1400px;
 	height:auto;
 	overflow: hidden;
+	margin-top: 25px;
 }
 .nivoSlider img {
 	position:absolute;
@@ -89,20 +90,21 @@
 }
 
 /* Direction nav styles (e.g. Next & Prev) */
+
 .nivo-directionNav a {
 	position:absolute;
 	top:45%;
-	z-index:9;
+	z-index:99;
 	cursor:pointer;
 	width: 50px;
 	height: 100px;
-	overflow: hidden;
 	text-indent: -100000px;
 	transition: 0.5s;
+	overflow: hidden;
 }
 
 .nivo-prevNav {
-	left:10px;
+	left: 10px;
 	background: url('images/slider-arrows.png') 0 0  no-repeat;
 	opacity: 0.6;
 	
